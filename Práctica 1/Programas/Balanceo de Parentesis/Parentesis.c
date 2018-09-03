@@ -29,7 +29,7 @@ boolean ValidarCadena(char cadena[TAM],int tamCadena){
 	elemento e,aux;
 	Initialize(&Pila);
 	for(i=0;i<tamCadena;i++){
-		e.Char=*(cadena);	
+		e.Char=cadena[i];	
 		if(cadena[i]=='('){
 			Push(&Pila,e);
 		}

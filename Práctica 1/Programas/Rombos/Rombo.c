@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main(void)
+int main()
 {
 	int entrada, numero, i, j, k, numespacios, numespdentro, numastecpr, numastecse, numastec, numespenmedio;
 	k = 0;
