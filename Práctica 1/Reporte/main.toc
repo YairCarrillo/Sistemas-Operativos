@@ -1,0 +1,26 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Competencias.}{2}
+\contentsline {section}{\numberline {2}Desarrollo.}{2}
+\contentsline {subsection}{\numberline {2.1} Sistema Operativo Linux}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Distribuciones de Linux.}{2}
+\contentsline {subsubsection}{\numberline {2.1.2}Distribuci\IeC {\'o}n Debian.}{3}
+\contentsline {subsubsection}{\numberline {2.1.3}Funcionalidades.}{3}
+\contentsline {subsubsection}{\numberline {2.1.4}Comandos.}{4}
+\contentsline {paragraph}{ Ejecuci\IeC {\'o}n de comandos: }{5}
+\contentsline {subsubsection}{\numberline {2.1.5} Compilaci\IeC {\'o}n y ejecuci\IeC {\'o}n.}{12}
+\contentsline {subsection}{\numberline {2.2}Sistema Operativo Windows.}{15}
+\contentsline {subsubsection}{\numberline {2.2.1}Comandos.}{15}
+\contentsline {paragraph}{ Ejecuci\IeC {\'o}n de comandos: }{16}
+\contentsline {subsubsection}{\numberline {2.2.2}Compilaci\IeC {\'o}n y ejecuci\IeC {\'o}n}{22}
+\contentsline {section}{\numberline {3}C\IeC {\'o}digo fuente.}{26}
+\contentsline {subsection}{\numberline {3.1}Hola Mundo}{26}
+\contentsline {subsection}{\numberline {3.2}Asteriscos}{26}
+\contentsline {subsection}{\numberline {3.3}Balanceo de Par\IeC {\'e}ntesis}{30}
+\contentsline {subsubsection}{\numberline {3.3.1}Funciones de la Pila}{30}
+\contentsline {subsubsection}{\numberline {3.3.2}Implementaci\IeC {\'o}n de las funciones de la Pila}{30}
+\contentsline {subsubsection}{\numberline {3.3.3}Implementaci\IeC {\'o}n de la soluci\IeC {\'o}n}{32}
+\contentsline {subsection}{\numberline {3.4}Torres de Hanoi}{33}
+\contentsline {subsection}{\numberline {3.5}Expresiones Artim\IeC {\'e}ticas}{34}
+\contentsline {section}{\numberline {4}Observaciones.}{40}
+\contentsline {section}{\numberline {5}An\IeC {\'a}lisis cr\IeC {\'\i }tico.}{40}
+\contentsline {section}{\numberline {6}Conclusiones.}{41}
