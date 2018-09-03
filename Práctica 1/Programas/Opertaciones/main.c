@@ -413,9 +413,7 @@ main (void)
 
   ValidarParentesis (cadena);	//Se llama a la primer función teniendo como entrada la cadena ingresada por el usuario
 
-  cadena_posfijo = Posfijo (cadena);	//Variable de tipo caracter que llama a nuestra segunda función (posfijo) 
-  printf ("Expresion en posfijo:\t %s \n", cadena_posfijo);	//Impresión en pantalla del resultado del arreglo resultante de la función que se llamo en la linea anterior
-
+  cadena_posfijo = Posfijo (cadena);	//Variable de tipo caracter que llama a nuestra segunda función (posfijo)  
   resultado = EvalPosfijo (cadena_posfijo);	//Variable de tipo flotante que llama a nuestra tercera función, tomando como entrada para esta, el arreglo retornado por la función posfijo y sustituyendo los valores de las variables dadas por el usuario
   printf ("Evaluacion: \t %f \n", resultado);	//Impresión en pantalla del resultado de la operación aritmetica.
 }
