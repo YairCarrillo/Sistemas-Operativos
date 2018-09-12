@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
 			strcat(aux,"/");
 			strcat(aux,name);
 			printf("%s\n", aux);
-			file=CreateFile(aux,GENERIC_WRITE,0,NULL,CREATE_NEW,FILE_ATTRIBUTE_NORMAL,NULL);;
+			file=CreateFile(aux,GENERIC_WRITE,0,NULL,CREATE_NEW,FILE_ATTRIBUTE_NORMAL,NULL);
 			WriteFile(file,content,sizeof(content),NULL,NULL);
 			strcpy(aux,"\0");
 			
