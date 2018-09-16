@@ -33,8 +33,6 @@ int main(int argc, char const *argv[])
 			file=CreateFile(aux,GENERIC_WRITE,0,NULL,CREATE_NEW,FILE_ATTRIBUTE_NORMAL,NULL);
 			WriteFile(file,content,sizeof(content),NULL,NULL);
 			strcpy(aux,"\0");
-			
-
 		}
 	}
 	return 0;

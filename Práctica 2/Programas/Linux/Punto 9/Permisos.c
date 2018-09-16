@@ -11,7 +11,8 @@ int main(){
 	int Permission_Octal;
 	char direction[200];
 	struct stat file; // para apuntar al archivo que deseamos cambiar los permisos
-	printf("Necesitamos la direcion del directorio donde se encuentran los archivos\n Por ejemplo: /home/yirz/Escritorio/File\n");
+	printf("Necesitamos la direcion del directorio donde se encuentran los archivos\n 
+		Por ejemplo: /home/yirz/Escritorio/File\n");
 	scanf("%s",direction);
 	if(stat(direction,&file)==0){
 		printf("Los permisos estan definidos por:\n");
