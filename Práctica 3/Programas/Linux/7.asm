@@ -3,7 +3,7 @@ cadena resd 50				;Espacio en memoria para la cadena al almacenar
 
 segment .text				;Segmento de código
 global _start 				;punto de entrada al programa(usado cob el enlazador id)
-_start						;Inicio del programa
+_start:						;Inicio del programa
 	mov edx,50d				;Longitud del bufer 
 	mov ecx,cadena 			;Cadena a leer
 	mov ebx,0 				;Entrada estandar
