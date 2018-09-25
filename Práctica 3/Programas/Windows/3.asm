@@ -10,7 +10,7 @@ global _main
 extern _GetStdHandle@4							;Acceso externo a la llamda al sistema _GetStdHandle()
 extern _WriteConsoleA@20						;Acceso externo a la llamda al sistema _WriteConsoleA()
 extern _ExitProcess@4							;Acceso externo a la llamda al sistema _ExitProcess()
-main:
+_main:
 	push dword-11								;Argumento pasado por la pila y usado en _GetStdHandle() para la salida estandar
 	call _GetStdHandle@4						;Invocación de GetStdHandle()
 	mov [handleConsola],eax						;Devolucion del manejador de consola para escribir en el registro eax
