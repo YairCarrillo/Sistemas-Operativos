@@ -10,6 +10,11 @@
 
 int main(int argc, char const *argv[])
 {
+	clock_t inicio,fin;
+	double total;
+	struct timeb start,end;
+	int diff;
+	ftime(&start);
 	int Matriz[10][10];
 	int MatrizAux[10][10];
 	int aux[10][10];
@@ -18,6 +23,7 @@ int main(int argc, char const *argv[])
 	int i,j;
 	char c;
 	FILE * fp;
+	inicio=clock();
 	CrearMatriz(Matriz);
 	sleep(2);
 	CrearMatriz(MatrizAux);
@@ -226,6 +232,13 @@ int main(int argc, char const *argv[])
 		LeerArchivo("MatrizInversa.txt");
 		exit(0);
 	}
+	wait(0);
+	fin=clock();
+	total=(double)(fin-inicio)/CLOCKS_PER_SEC;
+	printf("Tiempo de ejecucion %f segudos\n",total);
+	ftime(&end);
+	diff=(int)(1000.0*(end.time-start.time)+(end.millitm-start.millitm));
+	printf("Operation took %u milliseconds\n",diff );
 	return 0;
 }
 
