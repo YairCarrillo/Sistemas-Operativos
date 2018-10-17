@@ -1,9 +1,16 @@
 #include <windows.h>
 #include <stdio.h>
+#include <time.h>
 #include "Operaciones.h"
+#include <sys\timeb.h>
 
 int main(int argc, char const *argv[])
 {
+	clock_t inicio,fin;
+	double total;
+	struct timeb start,end;
+	int diff;
+	ftime(&start);
 	STARTUPINFO si;
 	PROCESS_INFORMATION pi;
 	int i;
@@ -13,6 +20,7 @@ int main(int argc, char const *argv[])
 		return 0;
 	}
 	// Creación proceso hijo
+	inicio=clock();
 	for (i=1; i <=5; ++i)
 	{
 		if(!CreateProcess(NULL,argv[i],NULL,NULL,FALSE,0,NULL,NULL,&si,&pi)){
@@ -40,5 +48,11 @@ int main(int argc, char const *argv[])
 	//Terminación controlada del proceso e hijo asociado de ejecución
 	CloseHandle(pi.hProcess);
 	CloseHandle(pi.hThread);
+	fin=clock();
+	total=(double)(fin-inicio)/CLOCKS_PER_SEC;
+	printf("Tiempo de ejecucion %f segudos\n",total);
+	ftime(&end);
+	diff=(int)(1000.0*(end.time-start.time)+(end.millitm-start.millitm));
+	printf("Operation took %u milliseconds\n",diff );
 	return 0;
 }
