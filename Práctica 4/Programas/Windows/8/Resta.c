@@ -9,7 +9,7 @@ int main(void){
 	int i,j;
 	FILE * fp;
 	CrearMatriz(Matriz);
-	sleep(20);
+	
 	CrearMatriz(MatrizAux);
 	fp=fopen("RestaMatrices.txt","w");
 	if(fp){
