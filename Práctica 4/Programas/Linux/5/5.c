@@ -6,6 +6,7 @@
 #include <string.h>
 #include <stdlib.h>	
 #include <sys/wait.h>
+#include <sys/timeb.h>
 
 
 int main(int argc, char const *argv[])
