@@ -14,3 +14,4 @@ int main(void){
 	printf("Mensaje en ambos\n");
 	exit(0);
 }
+
